@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <style>
+        * {
+            color: purple;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* This is for the font of entire file  */
+        }
+
+        .class1 {
+            color: rgb(224, 91, 224);
+            border-color: rebeccapurple;
+            border-width: 3px;
+            border-style: solid;
+            margin: 30px auto;
+            /* This is margin auto in x axis only  */
+            padding: 10px;
+            width: 901px;
+
+        }
+
+        .c1 {
+            color: purple;
+            border-color: rgb(18, 114, 204);
+            border-width: 3px;
+            border-style: solid;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #type1 {
+            float: left;
+            /* This is very important for making the alignment to left  */
+            width: 48%;
+        }
+
+        #technical {
+            float: right;
+            width: 48%;
+        }
+
+        #car1 {
+            clear: left;
+            clear: both;
+            /* This clear left means that no left float element must overlap with this element then the clear both will have higher priority as afetr clear left*/
+        
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+
+
+<body>
+    <div class="class1">
+        <h1>This is my first webpage</h1>
+        <div id="type1" class="c1">
+            <h3>This is 1</h3>
+            <!-- This is to tell that div have make sub div aswell to customize the page  -->
+            <p class="p1" id="y1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ea tempora vero nam nostrum
+                quibusdam quia facilis impedit repellat esse quisquam voluptates, dolor assumenda alias consectetur,
+                asperiores qui doloremque provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+               
+            </p>
+        </div>
+        <div id="technical" class="c1">
+            <h3>This is 2</h3>
+            <p class="p1" id="t1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ea tempora vero nam nostrum
+                quibusdam quia facilis impedit repellat esse quisquam i incidunt vitae blanditiis, voluptatibus nobis
+                asperiores dolorem suscipit quasi nesciunt dignissimos! Vel
+                harum animi delectus ipsa ex natus dolore placeat? Voluptas ipsum ducimus quasi recusandae enim numquam
+                consequatur.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus consequatur est ipsa eos rerum. Dolore
+                dolorem necessitatibus vitae, dolorum eveniet harum at ex ab voluptatum ratione laborum libero labore
+                consequatur!
+            </p>
+        </div>
+        <div id="car1" class="c1">
+            <h3>This is 3</h3>
+            <p class="p1" id="c1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ea tempora vero nam
+                nostrum quibusdam quia facilis impedit repellat esse quisquam voluptates, dolor assumenda alias
+                consectetur, asperiores qui doloremque provident.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

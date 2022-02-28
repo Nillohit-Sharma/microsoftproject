@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Style in css</title>
+    <style>
+        .class1{
+            color:purple;
+            background-color: rgb(224, 184, 224);
+            border: 3px solid purple;
+            width: 366px;
+            padding: 30px;
+            margin: 30px auto;
+            /* This is to tell that y is 30px margin but x is auto margin  */
+            
+            
+        }
+        .btn{
+            color: purple;
+            background-color: cornflowerblue;
+            padding: 6px;
+            border: 3px solid rgb(216, 40, 216);
+            border-radius: 6px;
+            cursor:pointer;
+            
+        }
+        .btn:hover{
+            color: rgb(112, 16, 112);
+            background-color: rgb(82, 132, 224);
+            padding: 6px;
+            border: 3px solid rgb(216, 40, 216);
+            border-radius: 6px;
+            cursor:pointer;
+        }
+        .btn:active{
+            color: rgb(82, 12, 88);
+            background-color: rgb(15, 41, 94);
+            padding: 6px;
+            border: 3px solid rgb(216, 40, 216);
+            border-radius: 6px;
+            cursor:pointer;
+        }
+        
+        a{
+            text-decoration: none;
+
+        }
+        a:hover{
+            color: rgb(73, 6, 73);
+            background-color: rgb(91, 133, 201);
+            padding: 6px;
+            border: 3px solid rgb(216, 40, 216);
+            border-radius: 6px;
+            cursor:pointer;
+        }
+        a:active{
+            color: rgb(78, 4, 78);
+            background-color: rgb(10, 43, 105);
+            padding: 6px;
+            border: 3px solid rgb(216, 40, 216);
+            border-radius: 6px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="class1" id="type1">
+        <h1>This is my webpage</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor cum tenetur nulla perferendis qui itaque et quaerat. Odio nulla explicabo vel ad, est expedita cupiditate ex magnam fugiat facere.
+        </p>
+        <a href="https://google.com" target="_blank" class="btn">Read more at Google</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>
