@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get3</title>
+    <link rel="stylesheet" href="nillohit.css">
+
+</head>
+<style>
+    .btn3{
+        left: 0;
+    }
+    
+    .a123{
+        border: 3px solid azure;
+        border-radius: 30px;
+        padding: 10px;
+        color: azure;
+        width: 200px;
+        background: rgb(30, 46, 46);
+        
+    }
+    .resetbtn{
+        color: azure;
+        margin: 10px;
+    }
+    .heading a{
+        color: azure;
+        text-decoration: none;
+    }
+    .logostatement{
+        font-size: 30px;
+        padding: 0 10px;
+        
+    }
+
+</style>
+<div class="hero">
+    <nav>
+        <img src="5278704_exercise_fitness_gym_sport_icon.png" class="logo">
+        <p class="logostatement">Onehealthy</p>
+        <ul>
+            <li><a href="myproject1.html">Home</a></li>
+            <li><a href="mycalculate3.html">BMI Calculator</a></li>
+            <li><a href="mycalculate3.html">Hydration</a></li>
+            <li><a href="#">Fit</a></li>
+            <li><a href="#" class="a123">Dark Mode Toggle</a></li>
+        </ul>
+        <button type="button" onclick="toggle()" id="switch3"><span></span></button>
+    </nav>
+    <div class="heading">
+        
+            <p>This is a fitness website</p>
+            <h1>Calculate BMI
+            </h1>
+            <h1>&<br> Hydration Value</h1>
+            <button><p>Try DARK MODE</p></button>
+            
+        
+
+    </div>
+    <div class="left">
+         
+    </div>
+    <div class="social">
+        <a href="https://www.google.com"target="_blank"><img src="7123025_logo_google_g_icon (2).png" alt=""></a>   
+        <a href="https://www.microsoft.com"target="_blank"><img src="4202105_microsoft_logo_social_social media_icon.png"></a>   
+        <a href="https//www.linkedin.com"target="_blank"><img src="107178_circle_linkedin_icon (12).png"></a>   
+        <a href="https://www.facebook.com"target="_blank"><img src="5296499_fb_facebook_facebook logo_icon (1).png"></a> 
+     </div>
+    
+</div>
+<script>
+    var switch3 = document.getElementById("switch3");
+    function toggle(){
+        switch3.classList.toggle("active");
+        document.body.classList.toggle("dark-theme");
+
+    }
+</script>
+<div class="formbox">
+    <div class="buttonbox">
+        <div class="btn3" id="btn33"></div >
+        <button type="button" class="button3" onclick="getBMI3()">BMI</button>
+        <button type="button" class="button3" onclick="gethydration()">Hydration</button>
+    </div>
+    <form id="bmi" class="inputform" onsubmit="return false">
+        
+            <input type="text" id="mynum1" class="inputfields" placeholder="Weight in Kg">
+    
+    
+            <input type="text" id="height" class="inputfields" placeholder="Height in cm">
+            
+            
+                BMI value is<input type="text" class="inputfields" id="bmivalue">
+                
+              <div class="footer">
+                  A healthy BMI is in range 19 and 25
+              </div>
+        <button type="submit" class="submitbtn" onclick="getBMI()">Calculate</button>
+
+        <button type="reset" class="resetbtn" >Reset</button>
+
+    </form>
+    <form id="hydration" class="inputform" onsubmit="return false" >
+        <input type="text" id="myweight" class="inputfields" placeholder="Weight in Kg">
+    
+    
+            <input type="text" id="height3" class="inputfields" placeholder="Height in m">
+            
+            
+                Hydration value(in lt/day)<input type="text" class="inputfields" id="hydration33">
+              <div class="footer">
+                  A healthy Hydration is approx. 2l/day
+              </div>
+       
+    <button type="submit" class="submitbtn" onclick="gethydration3()">Calculate</button>
+    
+
+    <button type="reset" class="resetbtn">Reset</button>
+</form>
+</div>
+
+</body>
+
+<script>
+     var a=document.getElementById("bmi");
+    var a3=document.getElementById("hydration");
+    var btn3= document.getElementsById("btn33");
+
+   function gethydration()
+    {
+        a.style.left="-400px";
+        a3.style.left="50px";
+        btn33.style.left="111px";
+    }
+    function getBMI3()
+    {
+        a.style.left="30px";
+        a3.style.left="451px";
+        btn33.style.left="10px";
+    }
+    
+    function getBMI()
+    {
+
+    
+    var weight= document.getElementById("mynum1").value;
+    var height= document.getElementById("height").value;
+
+        var newbmi= weight*10000/(height*height);
+        newbmi=Math.round(newbmi);
+        document.getElementById("bmivalue").value=newbmi;
+        if(newbmi<10)
+        {
+
+        }
+        
+    }
+    function gethydration3()
+    {
+
+    
+    var weight3= document.getElementById("myweight").value;
+    var height3= document.getElementById("height3").value;
+
+        var newhydration= weight3*0.033;
+        newhydration=Math.round(newhydration);
+        document.getElementById("hydration33").value=newhydration;
+    
+        
+    }
+</script>
+</html>
