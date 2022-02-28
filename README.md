@@ -1,4 +1,3 @@
-﻿# microsoftproject
 # Microsoft Internship Project
 	
 Industry name: Health
