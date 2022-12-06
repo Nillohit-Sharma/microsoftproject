@@ -8,7 +8,7 @@ Other services: HTML, CSS & JavaScript
 
 •	In today’s fast paced world people are not able to evaluate if they are getting overweight or underweight due to work from home pressure. They are also not taking proper intake of water.
 •	Hence, to solve this problem I have made a static web app where we can check our BMI(Body Mass Index) & Hydration requirement(water required per day).
-•	I have also implemented DARK MODE to prevent eye strain in this work from home.
+•	I have also implemented DARK MODE to prevent eye strain in this work from home enivironment.
 
 
 # Project Description: 
